@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>테스트</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/lib/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../static/js/lib/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+	<header id="header">
+		<div class="hader-top">
+			<h1><a href="#">에이플교육</a></h1>
+		</div>
+		<div class="header-nav">
+			<div class="header-gnb">
+				 <div class="all-menu">
+					<a href="#">전체메뉴</a>
+				 </div>
+				 <nav id="gnb">
+					 <ul>
+						<li><a href="#">A.project</a></li>
+						<li><a href="#">에이풀 선생님</a></li>
+						<li><a href="#">에이풀 강의실</a></li>
+						<li><a href="#">에이풀 수강신청</a></li>
+						<li><a href="#">입시정보</a></li>
+					 </ul>
+				 </nav>
+				 <div class="aside-menu">
+					<ul>
+						<li class="event"><a href="#"><span></span>이벤트</a></li>
+						<li class="customer"><a href="#"><span></span>고객센터</a></li>
+						<li class="share"><a href="#"><span></span>공유</a></li>
+					</ul>
+				 </div>
+			 </div>
+		</div>
+		<div class="nav-sub">
+			<p class="d-day">2017 수능 <span>D-214</span></p>
+			<ul>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">아이디/비밀번호 찾기</a></li>
+				<li class="ml0">
+					<div class="login-box">
+						<label for="id">ID</label> <input type="text" id="id">
+						<label for="PW">PW</label> <input type="text" id="pw">
+						<button type="button">로그인</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="container">
+		<!-- nav  -->
+		<div id="nav-bar-wrap">
+			<div class="nav-bar">
+				<div><img src="../static/images/content/home-icon.png" alt="home" /></div>
+				<div>
+					<select>
+						<option>에이풀 수간신청</option>
+						<option>에이풀 강의실</option>
+						<option>에이풀 선생님</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- // nav -->
+
+		<section class="teacher-wrap teacher-type1">
+			<div class="teacher-img-wrap">
+				<h2 class="title">듣기</h2>
+				<div class="video-area">
+					<a href="#" class="link" onclick="popShow('#sampleVideo');return false;">
+						<img src="../static/images/teacher/video_play_btn_idx5.jpg" alt="" />
+						<span>샘플 강의 영상</span>
+					</a>
+					<div class="video-play">
+						
+					</div>
+				</div>
+				<div class="text-bottom">
+					<p class="text">수능 듣기의 핵심만 학습하는 <br /><span class="txt-red">&lt;만점듣기 + 듣기기술&gt;</span>로 <br />영어 등급의 변수! 듣기를 한 방에 끝내다!</p>
+					<p class="title">
+						<span class="small">듣기가 듣기 쉬워지는 듣기 기</span>
+						<span class="txt-red">Two L 듣기</span>
+					</p>
+				</div>
+				<p class="small-text">
+					연혁 미정(추후 관리자에서 등록 가능)
+				</p>
+				<div class="teacher-name">
+					<span> E.teacher</span>임선라 선생님
+				</div>
+			</div>
+
+			<section class="teacher-info">
+				<nav class="teacher-tap">
+					<ul>
+						<li class="on"><a href="#">수학 김정길</a></li>
+						<li><a href="#">수강후기<i class="ico-01"></i></a></li>
+						<li><a href="#">수강신청<i class="ico-02"></i></a></li>
+						<li><a href="#">학습질문<i class="ico-03"></i></a></li>
+						<li><a href="#">학습자료<i class="ico-04"></i></a></li>
+						<li><a href="#">강의실<i class="ico-05"></i></a></li>
+					</ul>
+				</nav>
+
+				<!-- 첫번째 탭 내용 -->
+				<div class="teacher-tab01">
+					<div class="half-box">
+						<h3>최근 등록 학습자료</h3>
+						<ul class="listing">
+							<li><a href="#">[ 5강 ] 강의 보충자료 입니다...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">[ 6강 ] 강의 보충자료 입니다...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">[ 7강 ] 강의 보충자료 입니다...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">[ 8강 ] 강의 보충자료 입니다...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">[ 9강 ] 강의 보충자료 입니다...<span class="date">2016. 05.17</span></a></li>
+						</ul>
+						<a href="#" class="btn-more">+ 전체보기</a>
+					</div>
+					<div class="half-box">
+						<h3>최근 등록 수강후기</h3>
+						<ul class="listing">
+							<li><a href="#">선생님 감사합니다 성적이 많이 올랐어요...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">선생님 감사합니다 성적이 많이 올랐어요...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">선생님 감사합니다 성적이 많이 올랐어요...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">선생님 감사합니다 성적이 많이 올랐어요...<span class="date">2016. 05.17</span></a></li>
+							<li><a href="#">선생님 감사합니다 성적이 많이 올랐어요...<span class="date">2016. 05.17</span></a></li>
+						</ul>
+						<a href="#" class="btn-more">+ 전체보기</a>
+					</div>
+				</div>
+				<!-- //첫번째 탭 내용 -->
+
+				<!-- 수강후기 내용 -->
+				<div class="teacher-tab02">
+					<h3 class="teacher-title">수강후기<span>에이풀스터디의 모든 수강후기는 실제 수강생들의 100% 리얼후기입니다.</span></h3>
+
+					<ul class="review-list">
+						<li><a href="#">
+							<h4>
+								<span class="new-text">NEW</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								<span class="new-text">NEW</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								<span class="new-text">NEW</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+					</ul>
+
+					<div class="paging">
+						<a href="#" class="btn-left2">맨처음</a>
+						<a href="#" class="btn-left1">이전으로</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#" class="btn-right1">다음으로</a>
+						<a href="#" class="btn-right2">맨뒤로</a>
+					</div>
+
+					<a href="#" class="btn-review">수강후기 작성</a>
+				</div>
+				<!-- //수강후기 내용 -->
+
+				<!-- 수강후기 작성 내용 -->
+				<div class="teacher-tab02">
+					<h3 class="teacher-title type2">수강후기 작성</h3>
+					<div class="teacher-write">
+						<p class="text">국어 이경태 선생님의 수강후기를 남길 수 있습니다.</p>
+						<p class="inp-title"><input type="text" title="수강후기 작성 제목" placeholder="수강후기 작성" /></p>
+						<div class="inp-edit">
+							<!-- 에디트 영역 -->
+							에디트 영역
+						</div>
+						<div class="btn-group">
+							<a href="#">취소</a>
+							<a href="#">등록</a>
+						</div>
+					</div>
+				</div>
+				<!-- //수강후기 작성 내용 -->
+
+				<!-- 수강신청 내용 -->
+				<div class="teacher-tab03">
+					<h3 class="teacher-title">수강신청<span>국어 이경태 선생님의 단과 및 패키지 강좌 입니다.</span></h3>
+
+					<h4 class="teacher-h4">단과 상품</h4>
+					<div class="enrollment-list">
+						<div class="top">
+							<p class="sub-title">황일근,이경태,김도성,임지해,김정길,이민재,박승민,이형근,김혁재</p>
+							<h3>문과 전과목 프리미엄 패키지</h3>
+							
+							<div class="price-box">
+								<p class="saleline-bg">
+									<span class="text">정상가격</span>
+									<span class="line">\78,000</span>
+								</p>
+								<p class="sale">
+									<span class="text">할인율</span>
+									60%SALE
+								</p>
+								<p>
+									<span class="text">판매가격</span>
+									\550,000
+								</p>
+							</div>
+						</div>
+						<div class="bottom blue">
+							<p class="m-text">강좌 상세정보</p>
+							<ul>
+								
+								<li>학년 및 유형<br />전학년 | <span class="txt-blue">수능입문</span></li>
+								<li>수강기간<br />260일</li>
+								<li>강의수<br />281강</li>
+							</ul>
+							<a class="btn-more" href="#">상세보기</a>
+						</div>
+					</div>
+					<div class="enrollment-list">
+						<div class="top">
+							<p class="sub-title">황일근,이경태,김도성,임지해,김정길,이민재,박승민,이형근,김혁재</p>
+							<h3>문과 전과목 프리미엄 패키지</h3>
+							
+							<div class="price-box">
+								<p class="saleline-bg">
+									<span class="text">정상가격</span>
+									<span class="line">\78,000</span>
+								</p>
+								<p class="sale">
+									<span class="text">할인율</span>
+									60%SALE
+								</p>
+								<p>
+									<span class="text">판매가격</span>
+									\550,000
+								</p>
+							</div>
+						</div>
+						<div class="bottom blue">
+							<p class="m-text">강좌 상세정보</p>
+							<ul>
+								
+								<li>학년 및 유형<br />전학년 | <span class="txt-blue">수능입문</span></li>
+								<li>수강기간<br />260일</li>
+								<li>강의수<br />281강</li>
+							</ul>
+							<a class="btn-more" href="#">상세보기</a>
+						</div>
+					</div>
+					<div class="enrollment-list">
+						<div class="top">
+							<p class="sub-title">황일근,이경태,김도성,임지해,김정길,이민재,박승민,이형근,김혁재</p>
+							<h3>문과 전과목 프리미엄 패키지</h3>
+							
+							<div class="price-box">
+								<p class="saleline-bg">
+									<span class="text">정상가격</span>
+									<span class="line">\78,000</span>
+								</p>
+								<p class="sale">
+									<span class="text">할인율</span>
+									60%SALE
+								</p>
+								<p>
+									<span class="text">판매가격</span>
+									\550,000
+								</p>
+							</div>
+						</div>
+						<div class="bottom blue">
+							<p class="m-text">강좌 상세정보</p>
+							<ul>
+								
+								<li>학년 및 유형<br />전학년 | <span class="txt-blue">수능입문</span></li>
+								<li>수강기간<br />260일</li>
+								<li>강의수<br />281강</li>
+							</ul>
+							<a class="btn-more" href="#">상세보기</a>
+						</div>
+					</div>
+				</div>
+				<!-- //수강신청 내용 -->
+
+				<!-- 학습질문 내용 -->
+				<div class="teacher-tab04">
+					<h3 class="teacher-title type2">학습질문<span>수학 김정길 선생님께 강의관련 질문을 남겨 주시면 선생님이 직접 답변해드립니다.</span></h3>
+
+					<div class="search-box">
+						<p><label for="serchText">검색 키워드를 입력 해 주세요</label></p>
+						<input type="text" id="serchText" placeholder="이곳에 검색할 키워드를 입력 해 주세요." />
+						<button class="btn-search">
+							<img src="../static/images/content/search_btn.png" alt="검색"/>
+						</button>
+					</div>
+
+					<div class="border-box">
+						<p><strong class="txt-blue">대학수학능력시험 </strong> 키워드관련 <strong class="txt-blue">1</strong>건의 게시물이 존재합니다</p>
+						<div class="btn-group">
+							<a href="#">다른 키워드 검색</a>
+							<a href="#">전체 게시물 목록보기</a>
+						</div>
+					</div>
+
+					<ul class="review-list">
+						<li><a href="#">
+							<h4>
+								<span class="comment-text">[답변대기]</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								<span class="comment-text">[답변완료]</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								<span class="comment-text">[답변완료]</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+					</ul>
+
+					<div class="paging">
+						<a href="#" class="btn-left2">맨처음</a>
+						<a href="#" class="btn-left1">이전으로</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#" class="btn-right1">다음으로</a>
+						<a href="#" class="btn-right2">맨뒤로</a>
+					</div>
+
+					<a href="#" class="btn-review">학습질문 작성</a>
+				</div>
+				<!-- //학습질문 내용 -->
+
+				<!-- 학습질문 작성 내용 -->
+				<div class="teacher-tab02">
+					<h3 class="teacher-title type2">학습질문 작성</h3>
+					<div class="teacher-write">
+						<p class="text">국어 이경태 선생님의 수강후기를 남길 수 있습니다.</p>
+						<p class="inp-title"><input type="text" title="학습질문 작성 제목" placeholder="학습질문 작성" /></p>
+						<div class="inp-edit">
+							<!-- 에디트 영역 -->
+							에디트 영역
+						</div>
+						<div class="btn-group">
+							<a href="#">취소</a>
+							<a href="#">등록</a>
+						</div>
+					</div>
+				</div>
+				<!-- //학습질문 작성 내용 -->
+
+				<!-- 학습자료 내용 -->
+				<div class="teacher-tab04">
+					<h3 class="teacher-title type3">학습자료<span>학습자료에서는 수험생들에게 각 강의와 관련된 다양한 학습 자료를 제공합니다.</span></h3>
+
+					<div class="search-box">
+						<p><label for="serchText">검색 키워드를 입력 해 주세요</label></p>
+						<input type="text" id="serchText" placeholder="이곳에 검색할 키워드를 입력 해 주세요." />
+						<button class="btn-search">
+							<img src="../static/images/content/search_btn.png" alt="검색"/>
+						</button>
+					</div>
+
+					<div class="adobe-info">
+						<p>에이풀스터디의 모든 학습자료는 PDF 파일로 제작되어 업로드 되며,<br />이 자료를 열람하기 위해서는 Adobe Acrobat Reader 프로그램의 설치가 필요합니다.</p>
+						<p class="right">
+							Adobe Acrobat Reader 다운로드
+							<a href="https://get.adobe.com/kr/reader/" target="_blank"><img src="../static/images/teacher/adobe-down.png" alt="adobe-down" /></a>
+						</p>
+					</div>
+
+					<div class="border-box">
+						<p><strong class="txt-blue">대학수학능력시험 </strong> 키워드관련 <strong class="txt-blue">1</strong>건의 게시물이 존재합니다</p>
+						<div class="btn-group">
+							<a href="#">다른 키워드 검색</a>
+							<a href="#">전체 게시물 목록보기</a>
+						</div>
+					</div>
+
+					<ul class="review-list">
+						<li><a href="#">
+							<h4>
+								<span class="new-text">New</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								<span class="new-text">New</span>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+						<li><a href="#">
+							<h4>
+								6강까지 들었습니다.
+								<span class="reply-number">[ 1 ]</span>
+							</h4>
+							<ul class="entry-info">
+								<li>97번째 수강후기</li>
+								<li>2016.03.15</li>
+								<li>ssdd***</li>
+							</ul>
+							<p class="text">안녕하세요? 영어라고 하면 문법,단어공부가 제일 먼저 떠오르는 청년입니다. 우리나라인 한국에서 영어공부하면 말하기가 아닌 단순 5선지에 정답을 맞추는걸 목표로 공부를 합니다. 블라블라블라블라...</p>
+						</a></li>
+					</ul>
+
+					<div class="paging">
+						<a href="#" class="btn-left2">맨처음</a>
+						<a href="#" class="btn-left1">이전으로</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#" class="btn-right1">다음으로</a>
+						<a href="#" class="btn-right2">맨뒤로</a>
+					</div>
+				</div>
+				<!-- //학습자료 내용 -->
+			</section>
+		</section>
+	</section>
+	
+	<!-- popup -->
+	<div id="sampleVideo" class="popup_bg">
+		<article class="popup">
+			<div class="pop_cont">
+				영상 재생을 위해 플레이어 설치가 필요합니다.<br />
+				설치 후 F5 키를 눌러 페이지를 새로고침 해주세요.<br />
+				<a href="http://file.kollus.com/public/kollus2/KollusPlayer-2.0.3.2.exe">[다운로드]</a>
+			</div>
+			<a href="#" class="pop_close">팝업닫기</a>
+		</article>
+	</div>
+	
+	
+	<footer id="footer">
+    	<div class="footer-inner">
+			<div class="text-box">
+                <h2><img alt="logo" src="../static/images/common/footer-logo.png"></h2>
+                <p class="footer-text">
+	                        서울특별시 마포구 월드컵로 157 (SK빌딩) 에이풀교육(주) 대표이사 : 정선주 사업자등록번호 : 461-86-00378<br>
+	                        통신판매번호 : 제 2016- 서울마포  06285 신고 기관명 : 서울특별시 마포구<br>
+	                        학원설립·운영등록번호 : 제 02201300038호 신고 기관명 : 서울 특별시 서부교육 지원청<br>
+	                        고객센터 : 02-323-0378  (팩스 : 02-323-0366) 개인정보관리책임자 : 곽큰별 apulledu@gmail.com
+                </p>
+                <div class="kg-info">
+                    <img alt="kg-logo" src="../static/images/common/footer-kg.png">
+                    <a class="footer-href">서비스 가입사실 확인</a>
+                </div>
+            </div>
+		</div>
+		<div class="footer-info-wrap">
+			<div class="footer-info">
+				<p>Copyright &copy; 2016 Apullstudy study.co.Ltd. All rights reserved. </p>
+				<div class="footer-nav">
+					<select>
+						<option>Family Site</option>
+						<option value="site01">영풀클래스</option>
+						<option value="site02">무나투나</option>
+					</select>
+					<a href="#">이용약관</a>
+					<a href="#"><strong>개인정보처리방침</strong></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

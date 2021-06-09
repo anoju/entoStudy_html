@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>테스트</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/lib/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../static/js/lib/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+	<header id="header">
+		<div class="hader-top">
+			<h1><a href="#">에이플교육</a></h1>
+		</div>
+		<div class="header-nav">
+			<div class="header-gnb">
+				 <div class="all-menu">
+					<a href="#">전체메뉴</a>
+				 </div>
+				 <nav id="gnb">
+					 <ul>
+						<li><a href="#">A.project</a></li>
+						<li><a href="#">에이풀 선생님</a></li>
+						<li><a href="#">에이풀 강의실</a></li>
+						<li><a href="#">에이풀 수강신청</a></li>
+						<li><a href="#">입시정보</a></li>
+					 </ul>
+				 </nav>
+				 <div class="aside-menu">
+					<ul>
+						<li class="event"><a href="#"><span></span>이벤트</a></li>
+						<li class="customer"><a href="#"><span></span>고객센터</a></li>
+						<li class="share"><a href="#"><span></span>공유</a></li>
+					</ul>
+				 </div>
+			 </div>
+		</div>
+		<div class="nav-sub">
+			<p class="d-day">2017 수능 <span>D-214</span></p>
+			<ul>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">아이디/비밀번호 찾기</a></li>
+				<li class="ml0">
+					<div class="login-box">
+						<label for="id">ID</label> <input type="text" id="id">
+						<label for="PW">PW</label> <input type="text" id="pw">
+						<button type="button">로그인</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="container">
+		<!-- nav  -->
+		<div id="nav-bar-wrap">
+			<div class="nav-bar">
+				<div><img src="../static/images/content/home-icon.png" alt="home" /></div>
+				<div>
+					<select>
+						<option>고객센터</option>
+					</select>
+				</div>
+				<div>
+					<select>
+						<option>자주묻는질문</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- // nav -->
+		
+		<section id="content">
+			<h2>아이디 / 비밀번호 찾기</h2>
+			
+			<!-- 아이디 찾기 -->
+			<div class="find-wrap">
+				<h3>아이디를 잊어버리셨나요?</h3>
+				<p class="find-text">휴대폰 또는 이메일 확인을 통해 아이디를 찾으실 수 있습니다.</p>
+				<div class="find-box">
+					<ul>
+						<li><input type="radio" name="chk_info_id" id="radio-phone1" checked="checked"> <label for="radio-phone1">휴대폰 확인</label></li>
+						<li><input type="radio" name="chk_info_id" id="radio-email1"> <label for="radio-email1">이메일 확인</label></li>
+					</ul>
+					<div class="find-cont">
+						<div>
+							<p>
+								<label for="name1">이름</label>
+								<input type="text" id="name1" />
+							</p>
+							<p>
+								<label for="phone1">휴대폰 번호</label>
+								<select class="inp-select"  title="휴대폰 첫자리">
+									<option value="010">010</option>
+								</select> - 
+								<input type="text" class="inp-phone" title="휴대폰 중간자리" /> - 
+								<input type="text" class="inp-phone" title="휴대폰 마지막자리" />
+							</p>
+						</div>
+						<div>
+							<p>
+								<label for="name2">이름</label>
+								<input type="text" id="name2" />
+							</p>
+							<p>
+								<label for="email1">이메일</label>
+								<input type="text" class="inp-email" id="email1" title="이메일 앞" /> @ 
+								<input type="text" class="inp-email" title="이메일 뒤" />
+								<select class="email-select">
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>daum.net</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div><!-- find-box -->
+				<a href="#" class="btn-find">아이디 찾기</a>
+			</div>
+			<!-- //아이디 찾기 -->
+			
+			<!-- 비밀번호 찾기 -->
+			<div class="find-wrap">
+				<h3>비밀번호를 잊어버리셨나요?</h3>
+				<p class="find-text">휴대폰 또는 이메일 확인을 통해 임시비밀번호를 발급 해 드립니다 </p>
+				<div class="find-box">
+					<ul>
+						<li><input type="radio" name="chk_info_pw" id="radio-phone2" checked="checked"> <label for="radio-phone2">휴대폰 확인</label></li>
+						<li><input type="radio" name="chk_info_pw" id="radio-email2"> <label for="radio-email2">이메일 확인</label></li>
+					</ul>
+					<div class="find-cont">
+						<div>
+							<p>
+								<label for="id1">아이디</label>
+								<input type="text" id="id1" />
+							</p>
+							<p>
+								<label for="name3">이름</label>
+								<input type="text" id="name3" />
+							</p>
+							<p>
+								<label for="phone2">휴대폰 번호</label>
+								<select class="inp-select"  title="휴대폰 첫자리">
+									<option value="010">010</option>
+								</select> - 
+								<input type="text" class="inp-phone" title="휴대폰 중간자리" /> - 
+								<input type="text" class="inp-phone" title="휴대폰 마지막자리" />
+							</p>
+						</div>
+						<div>
+							<p>
+								<label for="id2">아이디</label>
+								<input type="text" id="id2" />
+							</p>
+							<p>
+								<label for="name4">이름</label>
+								<input type="text" id="name4" />
+							</p>
+							<p>
+								<label for="email2">이메일</label>
+								<input type="text" class="inp-email" id="email2" title="이메일 앞" /> @ 
+								<input type="text" class="inp-email" title="이메일 뒤" />
+								<select class="email-select">
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>daum.net</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div><!-- find-box -->
+				<a href="#" class="btn-find">비밀번호 찾기</a>
+			</div>
+			<!-- //비밀번호 찾기 -->
+			
+			<div class="find-result-none">
+				<strong>아이디 찾기 결과</strong><br>
+					입력한 정보와 일치하는 아이디가 없습니다.<br>
+					<span>정확한 정보로 확인 후 다시 입력해주세요.<br>
+					사이트를 통한 확인이 불가능한 경우에는 에이풀스터디 고객센터로 연락주세요.<br>
+					<strong>070-7722-1130</strong>
+					</span>
+			</div>
+		</section>
+		
+	</section>
+	
+	<footer id="footer">
+    	<div class="footer-inner">
+			<div class="text-box">
+                <h2><img alt="logo" src="../static/images/common/footer-logo.png"></h2>
+                <p class="footer-text">
+	                        서울특별시 마포구 월드컵로 157 (SK빌딩) 에이풀교육(주) 대표이사 : 정선주 사업자등록번호 : 461-86-00378<br>
+	                        통신판매번호 : 제 2016- 서울마포  06285 신고 기관명 : 서울특별시 마포구<br>
+	                        학원설립·운영등록번호 : 제 02201300038호 신고 기관명 : 서울 특별시 서부교육 지원청<br>
+	                        고객센터 : 02-323-0378  (팩스 : 02-323-0366) 개인정보관리책임자 : 곽큰별 apulledu@gmail.com
+                </p>
+                <div class="kg-info">
+                    <img alt="kg-logo" src="../static/images/common/footer-kg.png">
+                    <a class="footer-href">서비스 가입사실 확인</a>
+                </div>
+            </div>
+		</div>
+		<div class="footer-info-wrap">
+			<div class="footer-info">
+				<p>Copyright &copy; 2016 Apullstudy study.co.Ltd. All rights reserved. </p>
+				<div class="footer-nav">
+					<select>
+						<option>Family Site</option>
+						<option value="site01">영풀클래스</option>
+						<option value="site02">무나투나</option>
+					</select>
+					<a href="#">이용약관</a>
+					<a href="#"><strong>개인정보처리방침</strong></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

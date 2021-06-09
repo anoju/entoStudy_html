@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>테스트</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/lib/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../static/js/lib/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+	<header id="header">
+		<div class="hader-top">
+			<h1><a href="#">에이플교육</a></h1>
+		</div>
+		<div class="header-nav">
+			<div class="header-gnb">
+				 <div class="all-menu">
+					<a href="#">전체메뉴</a>
+				 </div>
+				 <nav id="gnb">
+					 <ul>
+						<li><a href="#">A.project</a></li>
+						<li><a href="#">에이풀 선생님</a></li>
+						<li><a href="#">에이풀 강의실</a></li>
+						<li><a href="#">에이풀 수강신청</a></li>
+						<li><a href="#">입시정보</a></li>
+					 </ul>
+				 </nav>
+				 <div class="aside-menu">
+					<ul>
+						<li class="event"><a href="#"><span></span>이벤트</a></li>
+						<li class="customer"><a href="#"><span></span>고객센터</a></li>
+						<li class="share"><a href="#"><span></span>공유</a></li>
+					</ul>
+				 </div>
+			 </div>
+		</div>
+		<div class="nav-sub">
+			<p class="d-day">2017 수능 <span>D-214</span></p>
+			<ul>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">아이디/비밀번호 찾기</a></li>
+				<li class="ml0">
+					<div class="login-box">
+						<label for="id">ID</label> <input type="text" id="id">
+						<label for="PW">PW</label> <input type="text" id="pw">
+						<button type="button">로그인</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="container">
+		<!-- nav  -->
+		<div id="nav-bar-wrap">
+			<div class="nav-bar">
+				<div><img src="../static/images/content/home-icon.png" alt="home" /></div>
+				<div>
+					<select>
+						<option>고객센터</option>
+					</select>
+				</div>
+				<div>
+					<select>
+						<option>자주묻는질문</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- // nav -->
+		
+		<section id="content">
+			<h2>1:1 고객문의</h2>
+			
+			<div class="question-box">
+				<div class="agree-box">
+					고객님께서 문의하신 내용에 대한 답변을 드리기 위해 <span>개인정보 수집 및 이용에 대한 동의</span>를 받고자 합니다<br />
+					수집된 개인정보는 답변을 위한 연락 용도 외 다른 용도로 이용되지 않습니다.
+					
+					<p class="btn-agree"><a href="#">개인정보 수집 및 이용에 동의합니다</a></p>
+				</div>
+				
+				<h3>문의하실 분류를 선택 해 주세요</h3>
+				<div class="radio_wrap">
+					<div class="radio-list">
+						<input type="radio" id="kind1" name="inpRadio" />
+						<label for="kind1">회원관련</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind2" name="inpRadio" />
+						<label for="kind2">강의관련</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind3" name="inpRadio" />
+						<label for="kind3">교제관련</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind4" name="inpRadio" />
+						<label for="kind4">결제관련</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind5" name="inpRadio" />
+						<label for="kind5">취소/환불</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind6" name="inpRadio" />
+						<label for="kind6">플레이어</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind7" name="inpRadio" />
+						<label for="kind7">모바일</label>
+					</div>
+					<div class="radio-list">
+						<input type="radio" id="kind8" name="inpRadio" />
+						<label for="kind8">기타</label>
+					</div>
+				</div>
+				
+				<h3>이름을 입력 해 주세요</h3>
+				<div class="inp-text">
+					<input type="text" title="이름" placeholder="이름" />
+				</div>
+				
+				<h3>이메일 주소를 입력 해 주세요</h3>
+				<div class="inp-text">
+					<input type="text" title="이메일" placeholder="이메일주소 예) abcde@apullstudy.com" />
+				</div>
+				
+				<h3>연락받을 휴대폰번호를 입력 해 주세요</h3>
+				<div class="inp-text">
+					<input type="text" title="휴대폰번호" placeholder="휴대폰번호 예)010-0000-0000 " />
+				</div>
+				
+				<h3>문의제목을 입력 해 주세요</h3>
+				<div class="inp-text">
+					<input type="text" title="문의제목" placeholder="문의제목" />
+				</div>
+				
+				<h3>문의내용을 입력 해 주세요</h3>
+				<div class="inp-textarea">
+					<textarea cols="0" rows="0"></textarea>
+				</div>
+				
+				<a href="#" class="btn-submit">1:1 고객문의 접수</a>
+				
+				<div class="personal-info-box">
+					<a href="#">
+						<p>개인정보 수집 및 이용동의</p>
+						<span class="btn-view">+ 내용보기</span>
+					</a>
+					<div class="view-box">
+						㈜에이풀스터디(이하 “회사”라 한다)는 고객님의 개인정보를 중요시하며, ＂정보통신망 이용촉진 및 정보보호“ 에 관한 법률을 준수하고 있습니다. <br />
+						회사는 개인정보처리방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 
+						개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br />
+						회사는 개인정보처리방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.<br /><br />
+
+
+						<strong>수집하는 개인정보 항목 </strong><br />
+
+						회사는 1:1문의를 위해 아래와 같은 개인정보를 수집하고 있습니다. <br />
+						  - 수집항목 : 이름 , 이메일, 휴대폰번호 <br />
+						  - 개인정보 수집방법 : 1:1문의<br /><br />
+
+						<strong>개인정보의 수집 및 이용목적 </strong><br />
+
+						회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다. <br />
+						  - 문의에 따른 본인확인<br /><br />
+
+						<strong>개인정보의 보유 및 이용기간</strong><br />
+
+						회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다. <br /><br />
+
+						<strong>개인정보의 파기절차 및 방법</strong><br />
+
+						- 파기절차 <br />
+						    문의를 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의     서류함) 내부 방침 및 기타 관련법령에 의한 정보보호 사유에 따라
+						    (보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다. <br />
+						    별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른      목적으로 이용되지 않습니다.<br /><br />
+
+						- 파기방법<br />
+						    전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭    제합니다.<br /><br />
+
+
+
+
+						<strong>개인정보 제공</strong><br />
+
+						회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. <br />
+						  - 이용자들이 사전에 동의한 경우 <br />
+						  - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의      요구가 있는 경우<br /><br />
+
+						<strong>수집한 개인정보의 위탁</strong><br />
+
+						회사는 고객님의 동의 없이 고객님의 정보를 외부 업체에 위탁하지 않습니다. <br />
+						향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.<br /><br />
+
+						<strong>개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</strong><br />
+
+						쿠키 등 인터넷 서비스 이용 시 자동 생성되는 개인정보를 수집하는 장치를 운영하지 않습니다.<br /><br />
+
+						<strong>개인정보에 관한 민원서비스</strong><br />
+
+						회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.
+
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+	</section>
+	
+	<footer id="footer">
+    	<div class="footer-inner">
+			<div class="text-box">
+                <h2><img alt="logo" src="../static/images/common/footer-logo.png"></h2>
+                <p class="footer-text">
+	                        서울특별시 마포구 월드컵로 157 (SK빌딩) 에이풀교육(주) 대표이사 : 정선주 사업자등록번호 : 461-86-00378<br>
+	                        통신판매번호 : 제 2016- 서울마포  06285 신고 기관명 : 서울특별시 마포구<br>
+	                        학원설립·운영등록번호 : 제 02201300038호 신고 기관명 : 서울 특별시 서부교육 지원청<br>
+	                        고객센터 : 02-323-0378  (팩스 : 02-323-0366) 개인정보관리책임자 : 곽큰별 apulledu@gmail.com
+                </p>
+                <div class="kg-info">
+                    <img alt="kg-logo" src="../static/images/common/footer-kg.png">
+                    <a class="footer-href">서비스 가입사실 확인</a>
+                </div>
+            </div>
+		</div>
+		<div class="footer-info-wrap">
+			<div class="footer-info">
+				<p>Copyright &copy; 2016 Apullstudy study.co.Ltd. All rights reserved. </p>
+				<div class="footer-nav">
+					<select>
+						<option>Family Site</option>
+						<option value="site01">영풀클래스</option>
+						<option value="site02">무나투나</option>
+					</select>
+					<a href="#">이용약관</a>
+					<a href="#"><strong>개인정보처리방침</strong></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>테스트</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<link href="../static/css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+	<header id="header">
+		<div class="hader-top">
+			<h1><a href="#">에이플교육</a></h1>
+		</div>
+		<div class="nav-sub">
+			<p class="d-day">2017 수능 <span>D-214</span></p>
+			<ul>
+				<li><a href="#" onclick="popShow('#eViewer');return false;">E.viewer</a></li>
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li>
+			</ul>
+		</div>
+		<div class="header-nav">
+			<div class="header-gnb">
+				 <div class="all-menu">
+					<a href="#">전체메뉴</a>
+				 </div>
+				 <div class="all-menu-wrap">
+				 	<div>
+				 		<div>
+					 		<h2>이동할 메뉴를 선택 해 주세요</h2>
+					 		<div class="all-menu-notice">
+						 		<div>
+						 			<strong>공지사항</strong>
+						 			<div>
+						 				<ul id="noticeBxslider" class="list-bxslider">
+						 					<li><a href="#">엔토스터디 3월 신용카드 무이자할부안내 <span>2016.03.01</span></a></li>
+						 					<li><a href="#">엔토스터디 3월 신용카드 무이자할부안내 <span>2016.03.01</span></a></li>
+						 				</ul>
+						 			</div>
+						 		</div>
+						 		<ul>
+						 			<li><a href="#">회원가입</a></li><li><a href="#">로그인</a></li>
+						 		</ul>
+					 		</div>
+					 		<div class="all-menu-sec">
+					 			<div class="all-menu-link">
+					 				<div>
+					 					<div class="all-menu-box list">
+					 						<strong class="tit"><a href="#">엔토 고객센터</a></strong>
+					 						<ul>
+					 							<li><a href="#">자주묻는질문</a></li>
+												<li><a href="#">1:1 고객문의</a></li>
+												<li><a href="#">공지사항</a></li>
+												<li><a href="#">카카오톡 상담안내</a></li>
+					 						</ul>
+					 					</div>
+					 					<div class="all-menu-box list">
+					 						<strong class="tit"><a href="#">엔토 선생님</a></strong>
+					 						<ul>
+					 							<li><a href="#">독해 저스틴 선생님</a></li>
+												<li><a href="#">듣기 임선라 선생님</a></li>
+												<li><a href="#">문법 박진웅 선생님</a></li>
+												<li><a href="#">어휘 권영걸 선생님</a></li>
+					 						</ul>
+					 					</div>
+					 					<div class="all-menu-box">
+					 						<a href="#" class="link bg_sign">엔토 수강신청</strong><span>SIGN UP</span></a>
+					 					</div>
+					 				</div>
+					 				<div>
+					 					<div class="all-menu-box wid-double">
+					 						<a href="#" class="news">
+						 						<p class="tit"><strong>입시정보</strong>NEWS</p>
+						 						<p class="txt">전략적인 입시정보로<br>대학의 문을 두드리다</p>
+						 						<p class="btn">View More</p>
+					 						</a>
+					 					</div>
+					 					<div class="all-menu-box">
+					 						<a href="#" class="link bg_class"><strong>엔토 강의실</strong><span>CLASS ROOM</span></a>
+					 					</div>
+					 				</div>
+					 			</div>
+					 			<div class="all-menu-afit">
+					 				<p class="afit-tit"><strong>A.fit </strong><span>수능을 첨가하다</span></p>
+					 				<div class="img_list">
+										<a href="#">
+											<span class="img healty"><img src="../static/images/content/@event.jpg" alt=""></span>
+											<span class="txt">
+												<span class="info">
+													<strong>36번째 Fit</strong><strong class="t_org">Healty</strong>
+												</span>
+												<strong class="tit">기력과 체력을 보충 할 수 있어야 한다. 기력과 체력을 보충 할 수 있어야 한다.</strong>
+												<span class="summary">‘다른 사람의 좋은 습관을 내 습관으로 만들고, 내 인생에 변화를 줍니다.’정보기술 기업의 대명사라 불리는 마이크로소프트 기술 고문인 빌 게이츠의 말처럼 좋은 습관이란 나의 행동을 더 나아가 나의 운명을 결정짓는 중요한 역할을 합니다.</span>
+											</span>
+										</a>
+									</div>
+					 			</div>
+					 		</div>
+					 		<div class="all-menu-event">
+					 			<strong><a href="#">현재 진행중인 이벤트</a></strong>
+					 			<div>
+					 				<ul id="eventBxslider" class="list-bxslider">
+					 					<li><a href="#">엔토스터디 3월 신용카드 무이자할부안내 <span>2016.03.01~2016.03.01</span></a></li>
+					 					<li><a href="#">엔토스터디 3월 신용카드 무이자할부안내 <span>2016.03.01~2016.03.01</span></a></li>
+					 					<li><a href="#">엔토스터디 3월 신용카드 무이자할부안내 <span>2016.03.01~2016.03.01</span></a></li>
+					 				</ul>
+					 			</div>
+					 		</div>
+					 		<a href="#" class="all-menu-close">전체메뉴 닫기</a>
+				 		</div>
+				 	</div>
+				 </div>
+				 <nav id="gnb">
+					 <ul>
+						<li><a href="#">A.project</a></li>
+						<li><a href="#">에이풀 선생님</a></li>
+						<li><a href="#">에이풀 강의실</a></li>
+						<li><a href="#">에이풀 수강신청</a></li>
+						<li><a href="#">입시정보</a></li>
+					 </ul>
+				 </nav>
+				 <div class="aside-menu">
+					<ul>
+						<li class="event"><a href="#"><span></span>이벤트</a></li>
+						<li class="customer"><a href="#"><span></span>고객센터</a></li>
+						<li class="share"><a href="#"><span></span>공유</a></li>
+					</ul>
+				 </div>
+			 </div>
+		</div>
+	</header>
+	<section id="container">
+		<!-- nav  -->
+		<div id="nav-bar-wrap">
+			<div class="nav-bar">
+				<div><img src="../static/images/content/home-icon.png" alt="home" /></div>
+				<div>
+					<select>
+						<option>에이풀 수간신청</option>
+						<option>에이풀 강의실</option>
+						<option>에이풀 선생님</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- // nav -->
+		
+		<section class="classroom">
+			<div class="classroom-visual"><img src="../static/images/content/class_room_default_img.jpg" alt="" /></div>
+			<div class="percentage-box">
+				<div class="ing-box">
+					<p class="ing-txt">현재 수강중인 강좌 <span>[1]</span></p>
+					<p class="text">회오리 패키지</p>
+					<p class="text">회오리 패키지</p>
+					<p class="text">회오리 패키지</p>
+				</div>
+				
+				<div class="pac-box">
+					<p class="pac-title">회오리 패키지</p>
+					<p class="pac-text"><span>수강가능기간</span> <span class="d-day">D-80</span></p>
+				</div>
+	
+				<div class="loding-act">
+					<p class="loding-txt">진도율<br /><span>19</span></p>
+				</div>
+			</div>
+	
+			<div class="main-box-blank">
+				<div class="subject-select-box">
+					<div class="subject-top">
+						<p class="select-txt">step 1. 과목 선택 [5과목] </p>	
+					</div>
+	
+					<div class="subject-bottom">
+						<p class="subject-txt"><a href="#">국어</a></p>
+						<p class="subject-txt"><a href="#">수학</a></p>
+						<p class="subject-txt"><a href="#">영어</a></p>
+						<p class="subject-txt"><a href="#">한국사</a></p>
+						<p class="subject-txt"><a href="#">생명<br>과학</a></p>
+						<p class="subject-txt"><a href="#">생명<br>과학</a></p>
+						<p class="subject-txt"><a href="#">생명<br>과학</a></p>
+						<p class="subject-txt"><a href="#">생명<br>과학</a></p>
+						<p class="subject-txt"><a href="#">생명<br>과학</a></p>
+					</div>
+				</div>
+				<div class="tch-select-box">
+					<div class="subject-top">
+						<p class="select-txt">step 2. 선생님 선택 [2명]</p>	
+					</div>
+	
+					<div class="tch-bottom">
+						<p class="select-txt02"><a href="#">[수학] 김정길 선생님</a></p>
+						<p class="select-txt02"><a href="#">[수학] 임지해 선생님</a></p>
+					</div>
+				</div>
+				<div class="Course-select-box">
+					<div class="subject-top">
+						<p class="select-txt">step 3. 강좌 선택 [2강좌]</p>	
+					</div>
+	
+					<div class="tch-bottom">
+						<p class="select-txt02"><a href="#">- 미적분II</a></p>
+						<p class="select-txt02"><a href="#">- 기화와 벡터</a></p>			
+					</div>
+				</div>
+				<div class="class-select-box">
+					<div class="subject-top">
+						<p class="select-txt">step 4. 강의 선택 [20강]</p>	
+					</div>
+	
+					<div class="tch-bottom">
+						<p class="select-txt02"><a href="#">[ 1강 ] [평면 곡선] 포물선</a></p>
+						<p class="select-txt02"><a href="#">[ 2강 ] [평면 곡선] 타원</a></p>
+						<p class="select-txt02"><a href="#">[ 3강 ] [평면 곡선] 쌍곡선</a></p>
+						<p class="select-txt02"><a href="#">[ 4강 ] [평면 곡선] 실전 감각 익히기 I</a></p>
+						<p class="select-txt02"><a href="#">[ 5강 ] [평면 곡선] 실전 감각 익히기 II</a></p>
+						<p class="select-txt02"><a href="#">[ 6강 ] [평면 곡선] 실전감각 익히기 III</a></p>
+						<p class="select-txt02"><a href="#">[ 7강 ] [평면 곡선] 평면 곡선의 접선</a></p>
+						<p class="select-txt02"><a href="#">[ 8강 ] [평면 곡선] 실전 감각 익히기 I</a></p>
+						<p class="select-txt02"><a href="#">[ 9강 ] [평면 곡선] 실전 감각 익히기 II</a></p>
+						<p class="select-txt02"><a href="#">[ 10강 ] [평면 벡터] 벡터의 연산 I</a></p>
+						<p class="select-txt02"><a href="#">[ 11강 ] [평면 벡터] 벡터의 연산 II</a></p>
+	
+					</div>
+				</div>
+				
+				<div class="bottom_menu_box">
+					<div class="close_box"><a href="#"><i></i>전제강의<br />목록열기</a></div>
+					<div class="list_select">
+						<div class="select_inner">
+							<img src="../static/images/content/classroom_pre_icon.png" alt="이전" /><p class="text01">전체 강의목록을 열어 강의를 선택 해 주세요.</p>
+						</div>
+						<div class="select_menu01">
+							<div class="hide-box"></div>
+							<a href="#"><p>강의자료<br />다운로드</p><img src="../static/images/content/download-icon.png" alt="다운로드" /></a>
+						</div>
+						<div class="select_menu02"><a href="#"><p>자주<br />묻는질문</p><img src="../static/images/content/qna-icon.png" alt="질문" /></a></div>
+						<div class="select_menu03">
+							<div class="hide-box"></div>
+							<a href="#"><p>스마트<br />메모열기</p><img src="../static/images/content/memo-icon.png" alt="메모" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	
+	<footer id="footer">
+    	<div class="footer-inner">
+			<div class="text-box">
+                <h2><img alt="logo" src="../static/images/common/footer-logo.jpg"></h2>
+                <p class="footer-text">
+	                        서울특별시 마포구 월드컵로 157 (SK빌딩) 에이풀교육(주) 대표이사 : 정선주 사업자등록번호 : 461-86-00378<br>
+	                        통신판매번호 : 제 2016- 서울마포  06285 신고 기관명 : 서울특별시 마포구<br>
+	                        학원설립·운영등록번호 : 제 02201300038호 신고 기관명 : 서울 특별시 서부교육 지원청<br>
+	                        고객센터 : 02-323-0378  (팩스 : 02-323-0366) 개인정보관리책임자 : 곽큰별 apulledu@gmail.com
+                </p>
+                <div class="kg-info">
+                    <img alt="kg-logo" src="../static/images/common/footer-kg.png">
+                    <a class="footer-href">서비스 가입사실 확인</a>
+                </div>
+            </div>
+		</div>
+		<div class="footer-info-wrap">
+			<div class="footer-info">
+				<p>Copyright &copy; 2016 Apullstudy study.co.Ltd. All rights reserved. </p>
+				<div class="footer-nav">
+					<select>
+						<option>Family Site</option>
+						<option value="site01">영풀클래스</option>
+						<option value="site02">무나투나</option>
+					</select>
+					<a href="#">이용약관</a>
+					<a href="#"><strong>개인정보처리방침</strong></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- popup -->
+	<!-- 로그인 전
+	<div id="eViewer" class="popup_bg e-viewer-none">
+		<article class="e-viewer-wrap">
+			<div>
+				<h1>E.viewer</h1>
+				<p>맞춤형 정보분석 제공툴 A.viewer 서비스 이용을 위해 먼저 로그인 해주세요.</p>
+				<a href="#" class="btn-login">회원 로그인</a>
+				<a href="#" class="pop_close">닫기</a>
+			</div>
+		</article>
+	</div>
+	 -->
+	<!-- 로그인후 -->
+	<div id="eViewer" class="popup_bg">
+		<article class="e-viewer-wrap">
+			<h1>E.viewer</h1>
+			<div class="viewer-box">
+				<div class="viewer-info">
+					<p class="name"><strong>김주원</strong>님 반갑습니다.</p>
+					<p class="date">오늘은 2016년 10월 13일 목요일 입니다.</p>
+					<p class="time">최근 접속일시<span>2016년 10월 13일 21시 33분</span></p>
+					
+					<div class="btn-group">
+						<a href="#">장바구니</a>
+						<a href="#">마이페이지</a>
+						<a href="#">나의결제내역</a>
+					</div>
+				</div>
+				<div class="d-day-wrap">
+					<h2><img src="../static/images/common/d-day.png" alt="d-day 맞춤형일정관리" /></h2>
+					<div class="d-day-box">
+	                    <p class="name">
+	                        2017학년도<br>대학수학능력시험
+	                    </p>
+	                    <p class="count">D-35</p>
+	                    <p class="date">2016년 11월 17일</p>
+	                </div>
+	                <div class="d-day-list">
+	                	<!-- 일정이 없는 경우 
+	                	<div class="none">
+		                	등록된 일정이 없습니다<br />
+		                	<a href="#">일정등록</a>
+	                	</div>
+	                	-->
+	                	<!-- 일정이 있는 경우 -->
+		                <ul>
+	                        <li><a href="#">D-1 - eeeeeeee</a></li>
+	                        <li><a href="#">16일지남 - 수정 사항 테스트 확인</a></li>
+	                        <li><a href="#">19일지남 - 에러 투성이</a></li>
+	                        <li><a href="#">30일지남 - 수정사항 완료일자</a></li>
+	                        <li><a href="#">38일지남 - 455</a></li>
+	                        <li><a href="#">37일지남 - e4treerer</a></li>
+	                	</ul>
+	            	</div>
+	            	<a href="#" class="btn-setting"><img src="../static/images/common/setting-btn.png" alt="설정"></a>
+	            	
+	            	<!-- d-day 맞춤형 일정관리 -->
+	            	<div class="pop-d-day">
+	            		<h3>D-DAY 맞춤형 일정관리</h3>
+	            		<div class="cont">
+	            			<!-- 일정이 없는경우
+	            			<div class="none">
+			                	등록된 일정이 없습니다<br />
+			                	<a href="#">일정등록</a>
+		                	</div>
+	            			  -->
+	            			<!-- 일정이 있는경우  -->
+	            			<p class="text"><span class="txt-red">6</span>건의 일정이 등록되어 있습니다.</p>
+	            			<div class="table-wrap">
+	            				<div class="btn-group">
+	            					<a href="#" class="btn-prev"><img src="../static/images/common/popup-left-btn.png" alt="이전" /></a>
+	            					<a href="#" class="btn-next"><img src="../static/images/common/popup-right-btn.png" alt="이후" /></a>
+	            				</div>
+	            				<table>
+	            					<caption>일정표</caption>
+	            					<colgroup>
+	            						<col style=" width:50px;" />
+	            						<col style=" width:100px;" />
+	            						<col style=" width:100px;" />
+	            						<col style="" />
+	            						<col style=" width:80px;" />
+	            					</colgroup>
+	            					<thead>
+	            						<tr>
+	            							<th scope="col">No</th>
+	            							<th scope="col">D-DAY</th>
+	            							<th scope="col">일자</th>
+	            							<th scope="col">내용</th>
+	            							<th scope="col">삭제</th>
+	            						</tr>
+	            					</thead>
+	            					<tbody>
+	            						<tr>
+	            							<td>1</td>
+	            							<td>D-162</td>
+	            							<td>2016.09.05</td>
+	            							<td class="tl"><a href="#">455</a></td>
+	            							<td><a href="#">[삭제]</a></td>
+	            						</tr>
+	            						<tr>
+	            							<td>1</td>
+	            							<td>D-162</td>
+	            							<td>2016.09.05</td>
+	            							<td class="tl"><a href="#">455455455455455455455455455455455455455455455455455</a></td>
+	            							<td><a href="#">[삭제]</a></td>
+	            						</tr>
+	            					</tbody>
+	            				</table>
+	            			</div>
+	            			
+	            			<p class="text">일정등록/수정</p>
+	            			
+	            			<div class="inp-box">
+	            				<dl>
+	            					<dt><label for="inpDate">날짜선택</label></dt>
+	            					<dd><input type="text" class="datepicker" id="inpDate" readonly="readonly" /></dd>
+	            					<dt><label for="inpText">내용입력</label></dt>
+	            					<dd><textarea id="inpText"></textarea></dd>
+	            				</dl>
+	            			</div>
+	            			<div class="btn"><a href="#">수정/등록</a></div>
+	            			
+	            		</div>
+	            		<a href="#" class="btn-close">닫기</a>
+	            	</div>
+	            	<!-- //d-day 맞춤형 일정관리 -->
+
+	            	<!-- d-day 상세정보 -->
+	            	<div class="pop-d-day-view">
+	            		<h3>D-DAY 상세 정보</h3>
+	            		<div class="text-info">
+	            			<p class="color2">28일 지남</p>
+	            			<span>2016년 9월 24일 토요일</span>
+	            		</div>
+	            		<div class="btn-group">
+        					<a href="#" class="btn-prev"><img src="../static/images/common/popup-left-btn.png" alt="이전" /></a>
+        					<a href="#" class="btn-next"><img src="../static/images/common/popup-right-btn.png" alt="이후" /></a>
+        				</div>
+        				<div class="text-box">
+        					에러 투성이
+        				</div>
+        				<a href="#" class="btn-close">닫기</a>
+	            	</div>
+	            	<!-- //d-day 상세정보 -->
+	            	
+				</div>
+			</div>
+			<div class="class-info">
+				<h2>CLASS INFO</h2>
+				<!-- 수강내역이 없는 경우 
+				<div class="none">
+					현재 수강중인 강좌가 없습니다
+				</div>
+				-->
+				
+				<!-- 수강내역이 있는 경우 -->
+				<div class="left">
+					<div class="class-process">
+						<p class="loding-txt">
+							수강종료<br />
+							<span class="min">20</span><span class="max">200</span>
+						</p>
+					</div>
+					<div class="my-class">
+                        <h3>나의 수강내역<span class="stop-btn">[수강일시정지]</span></h3>
+                        <ul>
+                        	<li><a href="#">메카영어 빈칸추론
+                        		<span class="min">20</span><span class="max">200</span>
+                        	</a></li>
+                        	<li><a href="#">수능 국어의 시작
+                        		<span class="min">34</span><span class="max">100</span>
+                        	</a></li>
+                        	<li><a href="#">영어 문법
+                        		<span class="min">250</span><span class="max">300</span>
+                        	</a></li>
+                        </ul>
+                    </div>
+				</div>
+				<div class="right">
+					<ul class="class-btn">
+                        <li><a href="#">강의실 바로가기</a></li>
+                        <li><a href="#" class="btn-smart-memo">스마트메모</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">1:1 고객문의</a></li>
+                    </ul>
+                    
+                    <h3>수강 일시정지</h3>
+                    <p>(3회사용 / 총3회)</p>
+                    <a href="#" class="btn-stop">수강 일시정지</a>
+                    <!-- 수강일시정지 해제
+                    <a href="#" class="btn-stop color">수강 일시정지 해제</a>
+                    -->
+                    
+                    <h3 class="mt">지난 접속 학습정보</h3>
+                    <ul class="time">
+                    	<li>- 2016-09-30 PM 03:28:32 - 2016-09-30 PM 03:28:41<span>9초</span></li>
+                    	<li>- 2016-09-30 PM 03:28:18 - 2016-09-30 PM 03:28:31<span>13초</span></li>
+                    	<li>- 2016-09-30 PM 03:25:00 - 1970-01-01 AM 09:00:00<span>2초</span></li>
+                    </ul>
+				</div>
+
+				<!-- 스마트 메모 상세 -->
+	        	<div class="pop-smart-memo">
+	        		<h3>스마트 메모</h3>
+					<!-- 내용이 없는경우 -->
+					<div class="none">
+						등록된 메모가 없습니다<br />
+						스마트메모는 강의시청중 사용 가능합니다
+					</div>
+
+	        		<!-- 내용이 있는경우 -->
+	        		<div class="cont">
+	        			<div class="memo-box">
+	        				<p class="time">2016.10.08</p>
+	        				<dl>
+	        					<dt>3강. [비문학] 글 읽기는 요약이 기본이다.</dt>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        				</dl>
+	        				<a href="#" class="btn-delete">[삭제]</a>
+	        			</div>
+	        			<div class="memo-box">
+	        				<p class="time">2016.10.08</p>
+	        				<dl>
+	        					<dt>3강. [비문학] 글 읽기는 요약이 기본이다.</dt>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        				</dl>
+	        				<a href="#" class="btn-delete">[삭제]</a>
+	        			</div>
+	        			<div class="memo-box">
+	        				<p class="time">2016.10.08</p>
+	        				<dl>
+	        					<dt>3강. [비문학] 글 읽기는 요약이 기본이다.</dt>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        					<dd>ugfufughjkhhikhihihihiihu</dd>
+	        				</dl>
+	        				<a href="#" class="btn-delete">[삭제]</a>
+	        			</div>
+	        		</div>
+	        		<a href="#" class="btn-more">더보기</a>
+					<a href="#" class="btn-close">닫기</a>
+	        	</div>
+	        	<!-- //스마트 메모 상세 -->
+
+			</div>
+			
+			<div class="notice-wrap">
+				<h2>최근 등록 게시물</h2>
+				<div class="left">
+					<h3>최근 학습질문 내역</h3>
+					<!-- 게시글이 없는 경우
+					<div class="none">
+						문의내역이 없습니다
+					</div>
+					 -->
+					<!-- 게시글이 있는 경우 -->
+					<ul>
+						<li><a href="#">[한국사 이형근] 학습질문 테스트 해보겠습니다.</a><span>답변대기</span></li>
+						<li><a href="#">[국어 황일근] 선생님 질문있어요</a><span>답변대기</span></li>
+						<li><a href="#">[국어 이경태] 답글 관련 수정작업 --</a><span>답변대기</span></li>
+						<li><a href="#">[생명과학 김혁재] 심폐소생 시켜주세요.</a><span>답변대기</span></li>
+						<li><a href="#">[영어 제리킹] 영어가 너무 어려워요</a><span>답변대기</span></li>
+					</ul>
+				</div>
+				<div class="right">
+					<h3>최근 1:1 고객문의 내역</h3>
+					<!-- 게시글이 없는 경우
+					<div class="none">
+						문의내역이 없습니다
+					</div>
+					-->
+					
+					<!-- 게시글이 있는 경우 -->
+					<ul>
+						<li><a href="#">[한국사 이형근] 학습질문 테스트 해보겠습니다.</a><span>답변대기</span></li>
+						<li><a href="#">[국어 황일근] 선생님 질문있어요</a><span>답변대기</span></li>
+						<li><a href="#">[국어 이경태] 답글 관련 수정작업 --</a><span>답변대기</span></li>
+						<li><a href="#">[생명과학 김혁재] 심폐소생 시켜주세요.</a><span>답변대기</span></li>
+						<li><a href="#">[영어 제리킹] 영어가 너무 어려워요</a><span>답변대기</span></li>
+					</ul>
+					
+					<a href="#" class="btn-inquiry">문의하기</a>
+				</div>
+			</div>
+			<a href="#" class="pop_close">닫기</a>
+		</article>
+	</div>
+	<!-- //popup -->
+</body>
+</html>
